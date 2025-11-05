@@ -17,11 +17,13 @@ pipeline {
         }
 
         stage('Deploy') {
-            steps {
-                echo 'Deploying to Local Server...'
-                // Example: copy files to a folder (optional)
-                // bat 'xcopy /E /I /Y . C:\\path\\to\\local-server\\portfolio'
-            }
-        }
+    steps {
+        echo 'Deploying to Local Server...'
+        // Copy all files from your workspace to the deployment folder
+        bat 'xcopy /E /I /Y * C:\\PortfolioDeployment\\'
+    }
+   }
+
+
     }
 }
