@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', 
-                    url: 'https://github.com/AnjaliMothsra/Portfolio-jenkins-pipeline.git',
+                    url: url: 'https://github.com/AnjaliMothsra/Portfolio_jenkins_pipeline.git',
                     credentialsId: 'github-token'
             }
         }
