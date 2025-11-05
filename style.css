@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #faf9ff;
+  background-color: #f5f3ff; /* slightly lighter */
   color: #333;
   scroll-behavior: smooth;
 }
@@ -22,48 +22,49 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 80px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 12px 60px; /* reduced padding for testing */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08); /* slightly darker shadow */
   z-index: 100;
 }
 
-/* 🔹 Updated Logo Color */
+/* Logo */
 .logo {
-  background: #7C4DFF; /* solid purple for consistency */
+  background: #7C4DFF;
   color: white;
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 999px;
-  font-size: 1rem;
+  font-weight: 700; /* bold */
+  padding: 10px 20px; /* slightly larger */
+  border-radius: 50px; /* slightly smaller radius */
+  font-size: 1.1rem; /* increased */
   letter-spacing: 1px;
 }
 
 /* Navigation Links */
 .menu a {
   text-decoration: none;
-  color: #333;
-  margin: 0 18px;
+  color: #444; /* darker for contrast */
+  margin: 0 16px;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: all 0.3s;
 }
 
 .menu a:hover {
-  color: #7C4DFF;
+  color: #9C6CFF; /* slightly lighter purple on hover */
+  transform: scale(1.05); /* subtle zoom */
 }
 
-/* 🔹 Updated My Resume Button */
+/* Resume Button */
 .resume-btn {
-  background: #7C4DFF; /* purple like the Contact button */
+  background: #7C4DFF;
   color: white;
-  padding: 8px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
+  padding: 10px 22px; /* slightly bigger */
+  border-radius: 30px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .resume-btn:hover {
-  background: #5E35B1; /* darker purple on hover */
+  background: #5E35B1;
+  transform: translateY(-2px); /* subtle lift on hover */
 }
 
 /* Purple divider line */
@@ -71,7 +72,7 @@ body {
   width: 100%;
   height: 2px;
   background: #7C4DFF;
-  margin-top: 60px;
+  margin-top: 58px; /* adjusted for navbar padding */
   border: none;
 }
 
@@ -80,51 +81,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px 100px 100px 100px;
-  background: #faf9ff;
+  padding: 150px 80px 100px 80px; /* slightly smaller sides */
+  background: #f5f3ff;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
-  flex-wrap: wrap; /* makes it responsive */
+  gap: 60px; /* smaller gap for test */
+  flex-wrap: wrap;
 }
 
-/* Illustration image */
+/* Profile image */
 .profile-img img {
   width: 260px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(123, 97, 255, 0.25);
+  border-radius: 12px; /* slightly bigger radius */
+  box-shadow: 0 0 30px rgba(124, 77, 255, 0.25); /* stronger glow */
   transition: transform 0.3s ease;
 }
 
 .profile-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07); /* more zoom on hover */
 }
 
-/* Text styles */
+/* Hero Text */
 .hero-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem; /* slightly bigger */
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hero-text h1 span {
-  color: #7C4DFF;
+  color: #9C6CFF; /* slightly lighter purple */
 }
 
 .hero-text h2 {
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  color: #444;
+  font-size: 1.35rem; /* tiny bump */
+  margin-bottom: 14px;
+  color: #555;
 }
 
 .hero-text p {
   color: #555;
-  line-height: 1.6;
+  line-height: 1.65;
   max-width: 550px;
   margin-bottom: 25px;
 }
@@ -135,7 +136,7 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -143,28 +144,28 @@ body {
 .contact-btn {
   background: #7C4DFF;
   color: white;
-  padding: 10px 25px;
-  border-radius: 25px;
-  display: inline-block;
+  padding: 12px 28px; /* slightly bigger */
+  border-radius: 28px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
   background: #5E35B1;
+  transform: translateY(-2px); /* subtle lift */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero {
-    padding: 120px 40px;
+    padding: 120px 30px;
   }
 
   .hero-content {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 35px;
   }
 
   .hero-text h1 {
@@ -172,6 +173,6 @@ body {
   }
 
   .hero-text h2 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 }
