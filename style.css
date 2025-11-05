@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f2ff; /* very subtle lighter shade */
+  background-color: #f4f2ff; /* subtle lighter shade */
   color: #333;
   scroll-behavior: smooth;
 }
@@ -18,53 +18,52 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 50px; /* slightly narrower */
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08); /* slightly deeper shadow */
+  padding: 12px 60px; /* minor tweak */
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
   z-index: 100;
 }
 
 /* Logo */
 .logo {
   background: #7C4DFF;
-  color: white;
+  color: #fff;
   font-weight: 700;
-  padding: 11px 22px; /* tiny bump */
-  border-radius: 45px; /* slightly smaller radius */
-  font-size: 1.15rem; /* slightly bigger */
-  letter-spacing: 1px;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-size: 1.15rem;
 }
 
 /* Navigation Links */
 .menu a {
   text-decoration: none;
   color: #444;
-  margin: 0 14px; /* reduced spacing */
+  margin: 0 15px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .menu a:hover {
-  color: #A07EFF; /* lighter purple hover */
-  transform: scale(1.06); /* slightly stronger hover zoom */
+  color: #A07EFF;
+  transform: scale(1.05);
 }
 
 /* Resume Button */
 .resume-btn {
   background: #7C4DFF;
   color: white;
-  padding: 11px 24px; /* tiny increase */
-  border-radius: 32px; 
+  padding: 10px 22px;
+  border-radius: 30px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .resume-btn:hover {
   background: #5E35B1;
-  transform: translateY(-3px); /* slightly stronger lift */
+  transform: translateY(-2px);
 }
 
 /* Purple divider line */
@@ -72,7 +71,7 @@ body {
   width: 100%;
   height: 2px;
   background: #7C4DFF;
-  margin-top: 56px; /* minor tweak for navbar height */
+  margin-top: 55px;
   border: none;
 }
 
@@ -81,7 +80,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px 70px 100px 70px; /* slightly narrower sides */
+  padding: 150px 60px 100px 60px;
   background: #f4f2ff;
 }
 
@@ -89,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 55px; /* slightly smaller gap */
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -97,46 +96,45 @@ body {
 .profile-img img {
   width: 260px;
   height: auto;
-  border-radius: 14px; /* tiny increase */
-  box-shadow: 0 0 32px rgba(124, 77, 255, 0.25); /* slightly stronger glow */
+  border-radius: 12px;
+  box-shadow: 0 0 28px rgba(124,77,255,0.2);
   transition: transform 0.3s ease;
 }
 
 .profile-img img:hover {
-  transform: scale(1.08); /* a touch bigger zoom */
+  transform: scale(1.06);
 }
 
 /* Hero Text */
 .hero-text h1 {
-  font-size: 2.65rem; /* slight bump */
+  font-size: 2.6rem;
   color: #333;
-  margin-bottom: 7px;
 }
 
 .hero-text h1 span {
-  color: #A07EFF; /* slightly lighter purple */
+  color: #A07EFF;
 }
 
 .hero-text h2 {
-  font-size: 1.38rem; /* tiny bump */
-  margin-bottom: 12px;
+  font-size: 1.35rem;
   color: #555;
+  margin-bottom: 12px;
 }
 
 .hero-text p {
   color: #555;
-  line-height: 1.68;
+  line-height: 1.65;
   max-width: 550px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /* Fade-in animation */
 .hero-text {
-  animation: fadeIn 1.3s ease-in-out; /* slightly longer */
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -144,16 +142,15 @@ body {
 .contact-btn {
   background: #7C4DFF;
   color: white;
-  padding: 13px 30px; /* slightly bigger */
-  border-radius: 30px;
-  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 28px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
   background: #5E35B1;
-  transform: translateY(-3px); /* slightly stronger lift */
+  transform: translateY(-2px);
 }
 
 /* Responsive adjustments */
@@ -169,10 +166,10 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 2.05rem;
+    font-size: 2rem;
   }
 
   .hero-text h2 {
-    font-size: 1.17rem;
+    font-size: 1.15rem;
   }
 }
